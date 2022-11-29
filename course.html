@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Video Gallery - With Search and Filtration</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css'><link rel="stylesheet" href="/dist/style.css">
+  <link rel="stylesheet" href="./coursestyle.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="row" style="padding-top:40px;">    
+   <div class="columns medium-12 small-centered">
+     <h4 class="float-left"><a href="#" style="color:#000;">Help Videos</a> | <span data-title></span></h4>
+     <a href="#" class="float-right" style="margin-top:7px;">Go to Help Center</a>
+   </div>
+</div>
+<div id="videoGallery" class="video-gallery">
+ 
+  <!-- Video -->
+  <div class="row" data-video-container style="display:none;">
+    <div class="columns medium-12">
+      <div class="flex-video widescreen">
+        <iframe data-video width="1600" height="900" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <!-- Search / Filter -->
+  <div class="row">    
+    <div class="columns medium-3">
+      <select name="category" id="filter">
+        <option selected="selected" value="">View All Videos</option>
+        <option value="Getting Started">Getting Started</option>
+        <option value="Dashboard">Dashboard</option>
+        <option value="Relationships">Relationships</option>
+        <option value="Marketing">Marketing</option>
+        <option value="My Business">My Business</option>
+        <option value="My Team">My Team</option>
+        <option value="Calendar">Calendar</option>
+        <option value="Settings">Settings</option>
+      </select> 
+    </div>
+    <div class="columns medium-9">
+      <input id="search" class="search" type="text" placeholder="search">
+    </div>
+  </div>
+  
+  
+  <!-- Thumbnails -->
+  <div id="thumbnails" class="list row small-up-1 medium-up-2 large-up-3">
+    <div class="column">
+      <a href="?id=DUWTT75xt6w&title=Introduction+to+the+Referral+Maker+App">
+        <img src="https://img.youtube.com/vi/DUWTT75xt6w/mqdefault.jpg" width="800">
+        <span class="name"><strong>Introduction to the Referral Maker App</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">Getting Started</span>
+      </a>
+    </div>    
+    <div class="column">
+      <a href="?id=ajNBSD5zeQo&title=Referral+Maker+CRM+Goals">
+        <img src="https://img.youtube.com/vi/ajNBSD5zeQo/mqdefault.jpg" width="800">
+        <span class="name"><strong>Referral Maker CRM Goals</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">My Business</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="?id=tylg0IfWEbU&title=Referral+Maker+CRM+Priority+Action+Center">
+        <img src="https://img.youtube.com/vi/tylg0IfWEbU/mqdefault.jpg" width="800">
+        <span class="name"><strong>Referral Maker CRM Priority Action Center</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">Relationships</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="?id=xXsrZblTa-U&title=Referral+Maker+CRM+App+Pop-By+Area">
+        <img src="https://img.youtube.com/vi/xXsrZblTa-U/mqdefault.jpg" width="800">
+        <span class="name"><strong>Referral Maker CRM App Pop-By Area</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">Marketing</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="?id=vb933-JveIQ&title=Referral+Maker+CRM+To-Do+Section">
+        <img src="https://img.youtube.com/vi/vb933-JveIQ/mqdefault.jpg" width="800">
+        <span class="name"><strong>Referral Maker CRM To-Do Section</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">My Business</span>
+      </a>
+    </div>
+    <div class="column">
+      <a href="?id=w0_Jj83yGvs&title=Referral+Maker+CRM+Mobile+App+Calendar">
+        <img src="https://img.youtube.com/vi/w0_Jj83yGvs/mqdefault.jpg" width="800">
+        <span class="name"><strong>Referral Maker CRM Mobile App Calendar</strong></span><br />
+        <span>10:00</span><br />
+        <span class="category">My Business</span>
+      </a>
+    </div>
+  </div><!-- End Row -->
+
+ 
+</div><!-- End search-results -->
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js'></script>
+<script src='https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js'></script>
+<script  src="coursescript.js"></script>
+<script  src="/dist/script.js"></script>
+
+</body>
+</html>
