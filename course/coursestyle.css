@@ -1,0 +1,11 @@
+.row {
+  max-width:960px !important;
+}
+
+.video-gallery {
+  padding:40px 0;
+}
+
+.column {
+  margin-bottom:40px;
+}
